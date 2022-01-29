@@ -8,3 +8,7 @@ IPython notebook train.ipynb was used to train, test and research.
 * Configure your own .env file or hard code the related fields.
 * Run main.py
 
+
+
+https://user-images.githubusercontent.com/72516677/151666569-53f24c87-4487-49cb-8996-9376bf21a4b9.mp4
+
