@@ -79,7 +79,7 @@ def predict(frame):
         fontColor = (0,0,255)
         start_mail_thread()
     elif max_indice == 4:
-        db.child("myData").update({"guvenlikDurumu": "TEXTING (RIGHT HAND) DETECTED"})
+        db.child("myData").update({"guvenlikDurumu": "TEXTING (LEFT HAND) DETECTED"})
         temp = (f'TEXTING (LEFT HAND) {int(prediction_prob[0][max_indice] * 100)}%')
         fontColor = (0,0,255)
         start_mail_thread()
