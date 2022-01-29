@@ -4,21 +4,23 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 import time
+import os
+
+from dotenv import load_dotenv
+load_dotenv()
 
 def send_mail(my_obj):
     my_obj['flag'] = True
-    mail_content = '''
-    Surus guvenliginin ihlali tespit edildi. Ihlal anini belgeleyen fotograf ekte gorulebilir.
-    '''
+    mail_content = '''Unsafe driving was detected. Check attachments for the evidence.'''
     #The mail addresses and password
     sender_address = 'guvenlisurusihlali@gmail.com'
-    sender_pass = 'Kalutisa18'
+    sender_pass = os.getenv('SENDER_PASS')
     receiver_address = 'bbbaykarmail@gmail.com'
     #Setup the MIME
     message = MIMEMultipart()
     message['From'] = sender_address
     message['To'] = receiver_address
-    message['Subject'] = 'Guvenlik Ihlali'
+    message['Subject'] = 'Distracted Driver Detection System'
     #The subject line
     #The body and the attachments for the mail
     message.attach(MIMEText(mail_content, 'plain'))
