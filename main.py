@@ -131,8 +131,8 @@ while cap.isOpened():
 
         (predictionText, fontColor) = predict(resized)
 
-        cv2.putText(frame, text=predictionText, org=(10, 30), fontFace=cv2.FONT_HERSHEY_SIMPLEX,
-                    fontScale=1, color=fontColor, thickness=3, lineType=cv2.LINE_AA)
+        cv2.putText(frame, text=predictionText, org=(10, 30), fontFace=cv2.FONT_HERSHEY_DUPLEX,
+                    fontScale=0.7, color=fontColor, thickness=2, lineType=cv2.LINE_AA)
         cv2.imshow('Testing on a sample video', frame)
 
         # hit q to exit
