@@ -1,6 +1,6 @@
 # distracted-driver-detection
 
-A distracted driver detected system.</br></br>Developed using Keras, OpenCV, React.js, Firebase services and SMTP.
+A distracted driver detection system.</br></br>Developed using Keras, OpenCV, React.js, Firebase services and SMTP.
 
 IPython notebook train.ipynb was used to train, test and research.
 
